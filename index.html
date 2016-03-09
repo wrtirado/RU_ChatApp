@@ -1,17 +1,23 @@
 <!DOCTYPE html>
 <html ng-app="chatApp">
-  <head>
-    <meta charset="utf-8">
-    <title> Chat App </title>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0/angular.js"></script>
-  </head>
-  <body ng-controller="chatCtrl as chatCtrl">
-    <header>
-      <img class="logo" src="http://www.disabilities-r-us.com/data/uploads/images/peoplechat.jpg"/>
 
-    </header>
+<head>
+  <meta charset="utf-8">
+  <title> Chat App </title>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0/angular.js"></script>
+</head>
 
+<body ng-controller="chatController as chatCtrl">
+  <header>
+    <img class="logo" src="http://www.disabilities-r-us.com/data/uploads/images/peoplechat.jpg" />
 
-    <script type="text/javascript" src="app.js"></script>
-  </body>
+  </header>
+  <button type="button" ng-click="chatCTRL.submitMessage()">Submit</button>
+  <input type="text" ng-model="chatCTRL.inputText">
+
+  <script type="text/javascript" src="chatBoxController.js"></script>
+  <script type="text/javascript" src="app.js"></script>
+
+</body>
+
 </html>
