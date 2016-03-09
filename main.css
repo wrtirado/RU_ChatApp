@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+}
+.header{
+  height: 200px;
+  width: 100%;
+  float: left;
+  background-color: red;
+}
+.footer {
+  height: 200px;
+  width: 100%;
+  float: left;
+  background-color: blue;
+}
+.chatList {
+  float: left;
+  background-color: green;
+  height: 500px;
+  width: 25%;
+}
+.content {
+  float: right;
+  background-color: orange;
+  height: 500px;
+  width: 75%
+}
