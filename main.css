@@ -1,7 +1,7 @@
 * {
   box-sizing: border-box;
 }
-.header{
+.header {
   height: 200px;
   width: 100%;
   float: left;
@@ -21,7 +21,31 @@
 }
 .content {
   float: right;
-  background-color: orange;
+  background-color: gray;
   height: 500px;
-  width: 75%
+  width: 75%;
+}
+.textContainer {
+  height: 50px;
+  width: 100%;
+  margin: 450px 0px;
+  background-color: gray;
+}
+.EnterTextBox {
+  height: 50px;
+  width: 91%;
+  border: 1px solid black;
+  margin: 0px 0px;
+  background-color: grey;
+}
+.logo {
+  border: 1px solid black;
+  width: 25%;
+  height: 100px;
+  color: white;
+  text-align: center;
+}
+.SubmitButton {
+  float: right;
+  margin: 0 auto;
 }

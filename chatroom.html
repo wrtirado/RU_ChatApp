@@ -1,18 +1,36 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="main.css">
-    <source src="app.js">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="main.css">
+  <source src="app.js">
     <title>Chat App</title>
   </head>
 
   <body>
-    <div class="header"></div>
-    <div class="chatList"></div>
-    <div class="content"></div>
-    <div class="footer"></div>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0/angular.js">
-    </script>
-  </body>
+    <div class="header">
+      <div class="logo"> LOGO
+
+      </div>
+    </div>
+    <div class="chatList">
+      <ul>Chat List
+        <li> Users Online: #</li>
+      </ul>
+    </div>
+
+    <div class="content">
+      <div class="textContainer">
+        <textarea class = "EnterTextBox" input type ="text">Enter Text...
+        </textarea>
+        <button class = "SubmitButton" type="button">SUBMIT</button>
+      </div>
+    </div>
+
+
+  </div>
+  <div class="footer"></div>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0/angular.js">
+  </script>
+</body>
 </html>
