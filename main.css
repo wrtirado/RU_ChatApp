@@ -1,11 +1,39 @@
 * {
   box-sizing: border-box;
 }
+body{
+  min-width: 900px;
+  max-width: 950px;
+}
 .header {
   height: 200px;
   width: 100%;
   float: left;
   background-color: red;
+  position: relative;
+
+}
+.header img{
+  width: 22%;
+}
+.header h1,h2{
+  display: inline-block;
+  /*position: absolute;*/
+  padding-left: 20px;
+}
+.header h1{
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 20px;
+  font-size: 40px;
+}
+
+.h1title{
+  display:inline-block;
+  width: 60%;
+}
+.header h2{
+  top: 50px;
 }
 .footer {
   height: 200px;
@@ -32,20 +60,30 @@
   background-color: gray;
 }
 .EnterTextBox {
+  float:left;
   height: 50px;
-  width: 91%;
+  width: 80%;
   border: 1px solid black;
   margin: 0px 0px;
-  background-color: grey;
+  background-color: white;
+  padding-top: 7px;
+  padding-left: 10px;
+  font-size: 16px;
+  border-radius: 5px;
 }
 .logo {
-  border: 1px solid black;
-  width: 25%;
-  height: 100px;
-  color: white;
-  text-align: center;
+  border-radius: 19px;
+  margin-left: 10px;
+  margin-top: 10px;
 }
+
 .SubmitButton {
-  float: right;
-  margin: 0 auto;
+  position: relative;
+  float: left;
+  margin-top: 10px;
+  height: 32px;
+  margin-left: 4px;
+  font-size: 20px;
+  border-radius: 3px;
+  background-color: aquamarine;
 }
