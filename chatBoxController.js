@@ -12,8 +12,8 @@
 
       chatCTRL.submitMessage = function(){
         var msg = {
-          text : chatCTRL.inputText,
           username : chatCTRL.userName,
+          wrote : chatCTRL.inputText,
             }
             chatCTRL.chatArray.push(msg)
       }

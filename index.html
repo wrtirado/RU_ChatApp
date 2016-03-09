@@ -7,17 +7,26 @@
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0/angular.js"></script>
 </head>
 
-<body ng-controller="chatController as chatCtrl">
+<body ng-controller="chatController as chatCTRL">
   <header>
     <img class="logo" src="http://www.disabilities-r-us.com/data/uploads/images/peoplechat.jpg" />
 
   </header>
-  <button type="button" ng-click="chatCTRL.submitMessage()">Submit</button>
+  <div>
+    <ul>
+      <li ng-repeat="x in chatCTRL.chatArray | ">//Need to add Filter
+          {{x}}
+      </li>
+    </ul>
+  </div>
+  <br>
   <input type="text" ng-model="chatCTRL.inputText">
+  <button type="button" ng-click="chatCTRL.submitMessage()">Submit</button>
+  <div>
 
+  </div>
   <script type="text/javascript" src="chatBoxController.js"></script>
   <script type="text/javascript" src="app.js"></script>
-
 </body>
 
 </html>
