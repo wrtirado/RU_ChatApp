@@ -35,8 +35,9 @@ body{
   background-color: gray;
 }
 .EnterTextBox {
+  float:left;
   height: 50px;
-  width: 91%;
+  width: 80%;
   border: 1px solid black;
   margin: 0px 0px;
   background-color: white;
