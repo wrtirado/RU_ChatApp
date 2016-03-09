@@ -1,6 +1,9 @@
 * {
   box-sizing: border-box;
 }
+body{
+  min-width: 900px;
+}
 .header {
   height: 200px;
   width: 100%;
@@ -36,16 +39,25 @@
   width: 91%;
   border: 1px solid black;
   margin: 0px 0px;
-  background-color: grey;
+  background-color: white;
+  padding-top: 7px;
+  padding-left: 10px;
+  font-size: 16px;
+  border-radius: 5px;
 }
 .logo {
-  border: 1px solid black;
-  width: 25%;
-  height: 100px;
-  color: white;
-  text-align: center;
+  border-radius: 19px;
+  margin-left: 10px;
+  margin-top: 10px;
 }
+
 .SubmitButton {
-  float: right;
-  margin: 0 auto;
+  position: relative;
+  float: left;
+  margin-top: 10px;
+  height: 32px;
+  margin-left: 4px;
+  font-size: 20px;
+  border-radius: 3px;
+  background-color: aquamarine;
 }
