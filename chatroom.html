@@ -1,38 +1,45 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="chatApp">
+
 <head>
   <meta charset="utf-8">
   <link rel="stylesheet" href="main.css">
   <source src="app.js">
-    <title>Chat App</title>
-  </head>
+  <title>Chat App</title>
+</head>
 
-  <body>
-    <div class="header">
-          <img class="logo" src="http://www.disabilities-r-us.com/data/uploads/images/peoplechat.jpg"></img>
-          <div class="h1title">
-                  <h1>90's Chat</h1>
-                  <h2>Bright, Smooth, Attention Catching and Colorful Chat... for ALL your friends!</h2>
-          </div>
+<body ng-controller="chatController as chatCTRL">
+  <div class="header">
+    <img class="logo" src="http://www.disabilities-r-us.com/data/uploads/images/peoplechat.jpg" />
+    <div class="h1title">
+      <h1>90's Chat</h1>
+      <h2>Bright, Smooth, Attention Catching and Colorful Chat... for ALL your friends!</h2>
     </div>
-    <div class="chatList">
-      <ul>Chat List
-        <li> Users Online: #</li>
+  </div>
+  <div class="chatList">
+    <ul>Chat List
+      <li> Users Online: #</li>
+    </ul>
+  </div>
+
+  <div class="content">
+    <div>
+      <ul>
+        <li ng-repeat="x in chatCTRL.chatArray">
+            {{x.wrote}} | by: {{x.username}}
+        </li>
       </ul>
     </div>
-
-    <div class="content">
-      <div class="textContainer">
-        <textarea class="EnterTextBox" type="text">Enter Text...
-        </textarea>
-        <button class="SubmitButton" type="button">SUBMIT</button>
-      </div>
+    <div class="textContainer">
+      <textarea class="EnterTextBox" type="text" ng-model="chatCTRL.inputText" placeholder="Enter Message Here...">
+      </textarea>
+      <button class="SubmitButton" type="button" ng-click="chatCTRL.submitMessage()">SUBMIT</button>
     </div>
-
-
   </div>
-  <div class="footer"></div>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0/angular.js">
-  </script>
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0/angular.js"></script>
+  <script type="text/javascript" src="chatBoxController.js"></script>
+  <script type="text/javascript" src="app.js"></script>
 </body>
+
 </html>
