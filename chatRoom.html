@@ -1,0 +1,14 @@
+
+<div>
+  <h1>THIS IS THE CHAT PAGE</h1>
+  <ul>
+    <li ng-repeat="x in chatCTRL.chatArray">
+        {{x.wrote}} | by: {{x.username}}
+    </li>
+  </ul>
+</div>
+<div class="textContainer">
+  <textarea class="EnterTextBox" type="text" ng-model="chatCTRL.inputText" placeholder="Enter Message Here...">
+  </textarea>
+  <button class="SubmitButton" type="button" ng-click="chatCTRL.submitMessage()">SUBMIT</button>
+</div>
